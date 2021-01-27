@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+          <div class="leftside">
+              <div class="nav-link">
+                  <a href="main.html">Home</a>
+              </div>
+
+              <div class="nav-link">
+                  <a href="About.html"target=_blank>About</a>
+              </div>
+          </div>
+
+          <div class="rightside">
+              <div class="brand">
+          <div>PEREZ SOFTWARE COMPANY</div>
+              </div>
+          </div>
+
+       </div>
+
+       <div class="content">
+            <div class="portfolio-items">
+
+                <div class="portfolio-item">
+                <div class="potfolio-img-background" style="background-image:url(night.jpg)"></div> 
+
+                <div class="img-text">
+                    <div class="logo">
+                        
+                    </div>
+
+                    <div class="subtitle">
+                        we build softwares out of passion of what we like doing this is our job
+                    </div>
+                </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="potfolio-img-background" style="background-image:url(peter.jpg)"></div> 
+    
+                    <div class="img-text">
+                        <div class="logo">
+                            
+                        </div>
+    
+                        <div class="subtitle">
+                            we create websites....of any design of your choice
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class="portfolio-item">
+                        <div class="potfolio-img-background" style="background-image:url(database.jpeg)"></div> 
+        
+                        <div class="img-text">
+                            <div class="logo">
+                                
+                            </div>
+        
+                            <div class="subtitle">
+                              we create database and also manage it as a service to our customers
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <div class="potfolio-img-background" style="background-image:url(codes.jpg)"></div> 
+            
+                            <div class="img-text">
+                                <div class="logo">
+                                    
+                                </div>
+            
+                                <div class="subtitle">
+                                    we build mobile application for any OS eg:android and mac
+                                </div>
+                            </div>
+                            </div>
+                        
+                            <div class="portfolio-item">
+                                <div class="potfolio-img-background" style="background-image:url(ht.jpg)"></div> 
+                
+                                <div class="img-text">
+                                    <div class="logo">
+                                        
+                                    </div>
+                
+                                    <div class="subtitle">
+                                       we solve some computer problems such as:the os of a computer not responding
+                                    </div>
+                                </div>
+                                </div>
+                            
+                                <div class="portfolio-item">
+                                    <div class="potfolio-img-background" style="background-image:url(designer.jpg)"></div> 
+                    
+                                    <div class="img-text">
+                                        <div class="logo">
+                                            
+                                        </div>
+                    
+                                        <div class="subtitle">
+                                            we also design websites of any choice......
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div class="potfolio-img-background" style="background-image:url(zone.jpg)"></div> 
+                        
+                                        <div class="img-text">
+                                            <div class="logo">
+                                                
+                                            </div>
+                        
+                                            <div class="subtitle">
+                                                coding is our job and we do it out of passion......
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="portfolio-item">
+                                            <div class="potfolio-img-background" style="background-image:url(linux.jpeg)"></div> 
+                            
+                                            <div class="img-text">
+                                                <div class="logo">
+                                                    
+                                                </div>
+                            
+                                                <div class="subtitle">
+                                                    we also do penetrating testing into systems
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="portfolio-item">
+                                                <div class="potfolio-img-background" style="background-image:url(key.jpg)"></div> 
+                                
+                                                <div class="img-text">
+                                                    <div class="logo">
+                                                        
+                                                    </div>
+                                
+                                                    <div class="subtitle">
+                                                       feel freee to work with us for your trust is our strength
+                                                    </div>
+                                                </div>
+                                                </div>
+
+                                                <div class="portfolio-item">
+                                                    <div class="potfolio-img-background" style="background-image:url(website.jpeg)"></div> 
+                                    
+                                                    <div class="img-text">
+                                                        <div class="logo">
+                                                            
+                                                        </div>
+                                    
+                                                        <div class="subtitle">
+                                                           your enjoying of our services is our pride.........we welcome you all to work with us
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                        
+                                
+                    
+            </div>
+       </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll( '.portfolio-item')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })    
+    })
+</script>
+</html>
